@@ -1,0 +1,14 @@
+prefix=/home/yh/share/workspace/M301-SDK/middleware/ffmpeg/ffmpeg-3.1.11/../_install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.48.101
+Requires: 
+Requires.private: libavutil >= 55.28.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lm -pthread
+Cflags: -I${includedir}

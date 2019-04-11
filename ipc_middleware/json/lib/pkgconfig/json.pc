@@ -1,0 +1,11 @@
+prefix=/home/yh/share/workspace/battery/middleware/json-c/json-c-master/../_install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: json
+Description: JSON implementation in C
+Version: 0.10
+Requires: 
+Libs:  -L${libdir} -ljson
+Cflags: -I${includedir}/json
